@@ -26,24 +26,5 @@ pip install -r requirements.txt
 ## BCGP Training & Inference 
 
 ```bash
-python train_ppi.py --cuda_id 0 --model [gcn/graphsage/gat/sgc/dna/gcnii/film/ssgc/fagcn/gatv2] --criterion sigmoid --hidden_dim 16 --log_dir ./your_log --k 3 --eta 1 --val_test_batch_size 2 --epochs 1 --run_times 5 --normalize True --gnn_lr 0.01 --vae_lr 0.00001 --sim_function feature_base
+python main_ncn.py 
 ```
-
-- For DBLP dataset, please use the following command:
-
-```bash
-python train_dblp.py --cuda_id 0 --model [gcn/graphsage/gat/sgc/dna/gcnii/film/ssgc/fagcn/gatv2] --criterion softmax --hidden_dim 16 --log_dir ./your_log --k 3 --eta 1 --val_test_batch_size 2 --epochs 1 --run_times 5 --normalize True --gnn_lr 0.01 --vae_lr 0.00001 --sim_function feature_base
-```
-
-- For Photo dataset, please use the following command:
-
-```bash
-python train_photo.py --cuda_id 0 --model [gcn/graphsage/gat/sgc/dna/gcnii/film/ssgc/fagcn/gatv2] --criterion softmax --hidden_dim 16 --log_dir ./your_log --k 3 --eta 1 --val_test_batch_size 2 --epochs 1 --run_times 5 --normalize True --gnn_lr 0.01 --vae_lr 0.00001 --sim_function feature_base
-```
-
-- For Computer dataset, please use the following command:
-
-```bash
-python train_computer.py --cuda_id 4 --model [gcn/graphsage/gat/sgc/dna/gcnii/film/ssgc/fagcn/gatv2] --criterion softmax --hidden_dim 16 --log_dir ./your_log --k 3 --eta 1 --val_test_batch_size 2 --epochs 1 --run_times 5 --normalize True --gnn_lr 0.01 --vae_lr 0.00001 --sim_function feature_base
-```
-
