@@ -1,6 +1,6 @@
 ## Integrating BERT Pre-training with Graph Common Neighbours for Predicting ceRNA Interactions
 
-This repository contains the PyTorch implementation for our BCGP. Further details about BCGP can be found in our paper.
+This repository contains the PyTorch implementation for our BCGP. Our paper is currently under review. Please stay tuned for more news. 
 
 ## Abstract
 
